@@ -1,0 +1,9 @@
+:root {
+    --background-color-primary: black;
+    --background-color-secondary: #C1C1C1;
+    --background-color-tertiary: #A1A1A1;
+    --title-color: #B71C1C;
+    --text-color:white;
+    --title-font: "Montserrat", sans-serif;
+    --text-font: "Roboto", sans-serif;
+}
