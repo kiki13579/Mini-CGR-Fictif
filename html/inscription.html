@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/page/inscription.css">
     <title>Mini CGR Fictif - Inscription</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Mini CGR Fictif</h1>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="./connexion.html">Connexion</a>
+        </nav>
+    </header>
+    <main class="inscription-main">
+        <div class="signup">
+            <h2>Inscription</h2>
+            <form class="signup-form">
+                <label for="username">Nom d’utilisateur :</label>
+                <input type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
+                <div>
+                    <input type="checkbox" name="checkbox" id="" required>
+                    <p>Vous acceptez de parteger avec nous c'est information que nous recuperons dans un but d'amélioration</p>
+                </div>
+                <button type="submit">S’enregistrer</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Mini CGR Fictif est un site fictif créé dans le cadre d'un projet de formation.</p>
+        <p>Designed by Kellyan Bernard</p>
+        <p>&copy; 2025 Mini CGR Fictif - Designed by Kellyan Bernard - Tous droits réservés</p>
+    </footer>
 </body>
 </html>

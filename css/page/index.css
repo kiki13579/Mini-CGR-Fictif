@@ -1,32 +1,99 @@
-.carousel-container {
-      width: 300px;
-      overflow: hidden;
-      position: relative;
-      border: 2px solid #ccc;
-    }
+.desktop-menu a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0.2rem 1rem;
+    font-family: var(--text-font);
+}
 
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
 
-    .carousel-item {
-      min-width: 300px;
-      height: 200px;
-      flex-shrink: 0;
-      background-color: lightblue;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-    }
+.film {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--background-color-tertiary);
+    border-radius:30px;
+}
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem;
 
-    .buttons {
-      margin-top: 10px;
-    }
 
-    button {
-      padding: 5px 10px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
+}
+.carousel-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--background-color-secondary);
+    border-radius: 30px;
+    padding: 2rem;
+}
+.film-poster h2{
+    padding: 1rem;
+    font-family: var(--title-font);
+    flex-wrap: wrap;
+}
+.carousel-item-image {
+    border-radius: 30px;
+    width: 20rem;
+}
+.carousel-item-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.film-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+.film-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: var(--background-color-tertiary);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
+}
+.film-reservation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: var(--background-color-tertiary);
+    border-radius: 30px;
+}
+.hidden {
+    display: none;
+}
+
+.film-reservation button {
+    padding: 1rem 2rem;
+    background-color: var(--link-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: var(--text-font);
+    font-size: 1rem;
+}
