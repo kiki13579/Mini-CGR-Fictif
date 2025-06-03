@@ -1,10 +1,33 @@
+const track = document.querySelector('.carousel-track');
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
 let currentIndex = 0;
-  const track = document.querySelector('.carousel-track');
-  const items = document.querySelectorAll('.carousel-item');
+const intervalTime = 3000;
 
-  function moveSlide(direction) {
-    const totalItems = items.length;
-    currentIndex = (currentIndex + direction + totalItems) % totalItems;
-    const offset = -currentIndex * 300; // largeur du conteneur
-    track.style.transform = `translateX(${offset}px)`;
-  }
+let intervalId; // pour pouvoir l’arrêter / redémarrer
+
+function moveToSlide(index) {
+  track.style.transform = 'translateX(' + (-index * 100) + '%)';
+}
+
+function autoSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  moveToSlide(currentIndex);
+}
+
+function startAutoSlide() {
+  intervalId = setInterval(autoSlide, intervalTime);
+}
+
+function stopAutoSlide() {
+  clearInterval(intervalId);
+}
+
+// Démarre le carousel automatiquement
+startAutoSlide();
+
+// Ajoute les événements à chaque slide
+slides.forEach(slide => {
+  slide.addEventListener('mouseenter', stopAutoSlide);
+  slide.addEventListener('mouseleave', startAutoSlide);
+});

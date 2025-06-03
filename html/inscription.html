@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/page/inscription.css">
+    <script src="../js/utility/hashing.js" defer></script>
+    <script src="../js/pages/inscription.js" defer></script>
     <title>Mini CGR Fictif - Inscription</title>
 </head>
 <body>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Inscription réussie !</h2>
+            <p>Redirection vers la page de connexion...</p>
+            <div class="loader"></div>
+        </div>
+    </div>
     <header>
         <h1>Mini CGR Fictif</h1>
         <nav>
@@ -19,21 +28,32 @@
         <div class="signup">
             <h2>Inscription</h2>
             <form class="signup-form">
-                <label for="username">Nom d’utilisateur :</label>
-                <input type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur">
-                <label for="password">Mot de passe :</label>
-                <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
-                <div>
+                <label class="label" for="username">Nom d’utilisateur :</label>
+                <input class="input" type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur">
+                <label class="label" for="password">Mot de passe :</label>
+                <input class="input" type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
+                <div class="checkbox-container">
                     <input type="checkbox" name="checkbox" id="" required>
                     <p>Vous acceptez de parteger avec nous c'est information que nous recuperons dans un but d'amélioration</p>
                 </div>
                 <button type="submit">S’enregistrer</button>
             </form>
         </div>
+        <div class="login">
+            <h2>Déjà inscrit ?</h2>
+            <p>Connectez-vous pour accéder à votre compte.</p>
+            <button type="submit" onclick="window.location.href = './connexion.html'">Connectez-vous</button>
+        </div>
     </main>
     <footer>
-        <p>Mini CGR Fictif est un site fictif créé dans le cadre d'un projet de formation.</p>
-        <p>Designed by Kellyan Bernard</p>
+        <img src="../asset/img/Gemini_Generated_Image_86khdx86khdx86kh.jpg" alt="Logo du site" class="footer-logo">
+        <ul class="footer-links">
+            <li><a href="./legalmentions.html">Mentions légale</a></li>
+            <li><a href="./CGU.html">CGU</a></li>
+            <li><a href="./apropos.html">A propos</a></li>
+            <li><a href="./copyright.html">Copyright</a></li>
+            <li><a href="./RGPD.html"> RGPD</a></li>
+        </ul>
         <p>&copy; 2025 Mini CGR Fictif - Designed by Kellyan Bernard - Tous droits réservés</p>
     </footer>
 </body>
