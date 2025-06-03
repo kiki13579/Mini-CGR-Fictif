@@ -10,6 +10,12 @@
     <title>Mini CGR Fictif - Acceuil</title>
 </head>
 <body class="body">
+    <div id="confirmation-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-message"></p>
+        </div>
+    </div>
     <header>
         <h1 class="logo">Mini CGR Fictif</h1>
         <nav class="desktop-menu">
@@ -21,10 +27,10 @@
         <section class="carousel-container">
             <h2 class="carousel-container-h2">Film a l'affiche</h2>
             <div class="carousel-track">
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Destination Finale : Bloodlines"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">Destination Finale : Bloodlines</h3>
-                        <img src="./asset/img/destination_final_bloodlines.jpg" alt="Image du film : Destination Finale : Bloodlines" class="carousel-item-header-img">
+                        <img loading="lazy" src="./asset/img/destination_final_bloodlines.jpg" alt="Image du film : Destination Finale : Bloodlines" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
@@ -39,10 +45,10 @@
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Mission impossible : The final reckoning"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">Mission impossible : The final reckoning</h3>
-                        <img src="./asset/img/mission_impossible.jpg" alt="Image du film : Mission impossible : The final reckoning" class="carousel-item-header-img">
+                        <img loading="lazy" src="./asset/img/mission_impossible.jpg" alt="Image du film : Mission impossible : The final reckoning" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
@@ -55,10 +61,10 @@
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Radio prague : Les ondes de la revolte"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">Radio prague : Les ondes de la revolte</h3>
-                        <img src="./asset/img/radio_prague.webp" alt="Image du film : Radio prague : Les ondes de la revolte" class="carousel-item-header-img">
+                        <img loading="lazy" src="./asset/img/radio_prague.webp" alt="Image du film : Radio prague : Les ondes de la revolte" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
@@ -72,10 +78,10 @@
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Until down : La mort sans fin"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">Until down : La mort sans fin</h3>
-                        <img src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="carousel-item-header-img">
+                        <img loading="lazy" src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
@@ -90,133 +96,128 @@
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Sinners"> 
                     <div class="carousel-item-header">
-                        <h3 class="carousel-item-header-h3">Until down : La mort sans fin</h3>
-                        <img src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="carousel-item-header-img">
+                        <h3 class="carousel-item-header-h3">Sinners</h3>
+                        <img loading="lazy" src="./asset/img/sinners.jpg" alt="Image du film : Sinners" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
                         <div class="carousel-item-description">
                             <h4 class="carousel-item-h4">Description</h4>
-                            <p class="carousel-item-text">Un an après la mystérieuse disparition de sa sœur Mélanie, Clover et ses amis se rendent dans la vallée reculée où elle a disparu pour chercher des réponses.</p>
-                            <p class="carousel-item-text">Alors qu'ils inspectent une auberge de jeunesse abandonnée, ils se retrouvent traqués par un tueur masqué et horriblement assassinés un par un... mais se réveillent ensuite et se retrouvent au début de la même soirée.</p>
-                            <p class="carousel-item-text">Piégés dans la vallée, ils sont forcés de revivre ce cauchemar encore et encore - mais à chaque fois, la menace du tueur est différente, et chaque version est plus terrifiante que la précédente.</p>
-                            <p class="carousel-item-text">Alors que l'espoir s'amenuise, le groupe comprend qu'ils n'ont qu'un nombre limité de vies, et que leur seule chance de s'en sortir est de survivre jusqu'à l'aube.</p>
+                            <p class="carousel-item-text">Alors qu’ils cherchent à s’affranchir d’un lourd passé, deux frères jumeaux reviennent dans leur ville natale pour repartir à zéro.</p>
+                            <p class="carousel-item-text">Mais ils comprennent qu’une puissance maléfique bien plus redoutable guette leur retour avec impatience… « À force de danser avec le diable, un beau jour, il viendra te chercher chez toi. »</p>
                         </div>
                         <div class="carousel-item-subcontent hidden">
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Thunderbolts*"> 
                     <div class="carousel-item-header">
-                        <h3 class="carousel-item-header-h3">Until down : La mort sans fin</h3>
-                        <img src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="carousel-item-header-img">
+                        <h3 class="carousel-item-header-h3">Thunderbolts*</h3>
+                        <img loading="lazy" src="./asset/img/thunderbolt.jpg" alt="Image du film : Thunderbolts*" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
                         <div class="carousel-item-description">
                             <h4 class="carousel-item-h4">Description</h4>
-                            <p class="carousel-item-text">Un an après la mystérieuse disparition de sa sœur Mélanie, Clover et ses amis se rendent dans la vallée reculée où elle a disparu pour chercher des réponses.</p>
-                            <p class="carousel-item-text">Alors qu'ils inspectent une auberge de jeunesse abandonnée, ils se retrouvent traqués par un tueur masqué et horriblement assassinés un par un... mais se réveillent ensuite et se retrouvent au début de la même soirée.</p>
-                            <p class="carousel-item-text">Piégés dans la vallée, ils sont forcés de revivre ce cauchemar encore et encore - mais à chaque fois, la menace du tueur est différente, et chaque version est plus terrifiante que la précédente.</p>
-                            <p class="carousel-item-text">Alors que l'espoir s'amenuise, le groupe comprend qu'ils n'ont qu'un nombre limité de vies, et que leur seule chance de s'en sortir est de survivre jusqu'à l'aube.</p>
+                            <p class="carousel-item-text">Marvel Studios rassemble une équipe de anti-héros peu conventionnelle : Yelena Belova, Bucky Barnes, Red Guardian, Le Fantôme, Taskmaster et John Walker.</p>
+                            <p class="carousel-item-text">Tombés dans un piège redoutable tendu par Valentina Allegra de Fontaine, ces laissés pour compte complètement désabusés doivent participer à une mission à haut risque qui les forcera à se confronter aux recoins les plus sombres de leur passé.</p>
+                            <p class="carousel-item-text">Ce groupe dysfonctionnel se déchirera-t-il ou trouvera-t-il sa rédemption en s’unissant avant qu’il ne soit trop tard ?</p>
                         </div>
                         <div class="carousel-item-subcontent hidden">
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Les Maudites"> 
                     <div class="carousel-item-header">
-                        <h3 class="carousel-item-header-h3">Until down : La mort sans fin</h3>
-                        <img src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="carousel-item-header-img">
+                        <h3 class="carousel-item-header-h3">Les Maudites</h3>
+                        <img loading="lazy" src="./asset/img/lm.webp" alt="Image du film : Les Maudites" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
                         <div class="carousel-item-description">
                             <h4 class="carousel-item-h4">Description</h4>
-                            <p class="carousel-item-text">Un an après la mystérieuse disparition de sa sœur Mélanie, Clover et ses amis se rendent dans la vallée reculée où elle a disparu pour chercher des réponses.</p>
-                            <p class="carousel-item-text">Alors qu'ils inspectent une auberge de jeunesse abandonnée, ils se retrouvent traqués par un tueur masqué et horriblement assassinés un par un... mais se réveillent ensuite et se retrouvent au début de la même soirée.</p>
-                            <p class="carousel-item-text">Piégés dans la vallée, ils sont forcés de revivre ce cauchemar encore et encore - mais à chaque fois, la menace du tueur est différente, et chaque version est plus terrifiante que la précédente.</p>
-                            <p class="carousel-item-text">Alors que l'espoir s'amenuise, le groupe comprend qu'ils n'ont qu'un nombre limité de vies, et que leur seule chance de s'en sortir est de survivre jusqu'à l'aube.</p>
+                            <p class="carousel-item-text">Quelque chose hante Andrea, mais personne, pas même elle, ne peut le voir à l’œil nu.</p>
+                            <p class="carousel-item-text">Il y a vingt ans, à dix mille kilomètres de là, la même présence terrorisait Marie.</p>
+                            <p class="carousel-item-text">Camila est la seule à pouvoir comprendre ce qui leur arrive, mais personne ne la croit.</p>
+                            <p class="carousel-item-text">Face à cette menace oppressante, toutes trois entendent le même son écrasant : un cri.</p>
                         </div>
                         <div class="carousel-item-subcontent hidden">
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Jeunes Mères"> 
                     <div class="carousel-item-header">
-                        <h3 class="carousel-item-header-h3">Until down : La mort sans fin</h3>
-                        <img src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="carousel-item-header-img">
+                        <h3 class="carousel-item-header-h3">Jeunes Mères</h3>
+                        <img loading="lazy" src="./asset/img/jm.jpg" alt="Image du film : Jeunes Mères" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
                         <div class="carousel-item-description">
                             <h4 class="carousel-item-h4">Description</h4>
-                            <p class="carousel-item-text">Un an après la mystérieuse disparition de sa sœur Mélanie, Clover et ses amis se rendent dans la vallée reculée où elle a disparu pour chercher des réponses.</p>
-                            <p class="carousel-item-text">Alors qu'ils inspectent une auberge de jeunesse abandonnée, ils se retrouvent traqués par un tueur masqué et horriblement assassinés un par un... mais se réveillent ensuite et se retrouvent au début de la même soirée.</p>
-                            <p class="carousel-item-text">Piégés dans la vallée, ils sont forcés de revivre ce cauchemar encore et encore - mais à chaque fois, la menace du tueur est différente, et chaque version est plus terrifiante que la précédente.</p>
-                            <p class="carousel-item-text">Alors que l'espoir s'amenuise, le groupe comprend qu'ils n'ont qu'un nombre limité de vies, et que leur seule chance de s'en sortir est de survivre jusqu'à l'aube.</p>
+                            <p class="carousel-item-text">Jessica, Perla, Julie, Ariane et Naïma sont hébergées dans une maison maternelle qui les aide dans leur vie de jeune mère.</p>
+                            <p class="carousel-item-text">Cinq adolescentes qui ont l’espoir de parvenir à une vie meilleure pour elles-mêmes et pour leur enfant.</p>
                         </div>
                         <div class="carousel-item-subcontent hidden">
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Hot Milk"> 
                     <div class="carousel-item-header">
-                        <h3 class="carousel-item-header-h3">Until down : La mort sans fin</h3>
-                        <img src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="carousel-item-header-img">
+                        <h3 class="carousel-item-header-h3">Hot Milk</h3>
+                        <img loading="lazy" src="./asset/img/hm.jpg" alt="Hot Milk" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
                         <div class="carousel-item-description">
                             <h4 class="carousel-item-h4">Description</h4>
-                            <p class="carousel-item-text">Un an après la mystérieuse disparition de sa sœur Mélanie, Clover et ses amis se rendent dans la vallée reculée où elle a disparu pour chercher des réponses.</p>
-                            <p class="carousel-item-text">Alors qu'ils inspectent une auberge de jeunesse abandonnée, ils se retrouvent traqués par un tueur masqué et horriblement assassinés un par un... mais se réveillent ensuite et se retrouvent au début de la même soirée.</p>
-                            <p class="carousel-item-text">Piégés dans la vallée, ils sont forcés de revivre ce cauchemar encore et encore - mais à chaque fois, la menace du tueur est différente, et chaque version est plus terrifiante que la précédente.</p>
-                            <p class="carousel-item-text">Alors que l'espoir s'amenuise, le groupe comprend qu'ils n'ont qu'un nombre limité de vies, et que leur seule chance de s'en sortir est de survivre jusqu'à l'aube.</p>
+                            <p class="carousel-item-text">Par un été étouffant, Rose et sa fille Sofia se rendent à Almeria une station balnéaire du sud de l’Espagne.</p>
+                            <p class="carousel-item-text">Elles viennent consulter l’énigmatique docteur Gómez, qui pourrait soigner la maladie de Rose, clouée à un fauteuil roulant.</p>
+                            <p class="carousel-item-text">Sofia, jusque-là entravée par une mère possessive, s’abandonne au charme magnétique d’Ingrid, baroudeuse qui vit selon ses propres règles.</p>
+                            <p class="carousel-item-text">Tandis que Sofia s’émancipe, Rose ne supporte pas de voir sa fille lui échapper – et les vieilles rancoeurs qui pèsent sur leur relation vont éclater au grand jour…</p>
                         </div>
                         <div class="carousel-item-subcontent hidden">
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Partir un Jour"> 
                     <div class="carousel-item-header">
-                        <h3 class="carousel-item-header-h3">Until down : La mort sans fin</h3>
-                        <img src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="carousel-item-header-img">
+                        <h3 class="carousel-item-header-h3">Partir un Jour</h3>
+                        <img loading="lazy" src="./asset/img/puj.webp" alt="Image du film : Partir un Jour" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
                         <div class="carousel-item-description">
                             <h4 class="carousel-item-h4">Description</h4>
-                            <p class="carousel-item-text">Un an après la mystérieuse disparition de sa sœur Mélanie, Clover et ses amis se rendent dans la vallée reculée où elle a disparu pour chercher des réponses.</p>
-                            <p class="carousel-item-text">Alors qu'ils inspectent une auberge de jeunesse abandonnée, ils se retrouvent traqués par un tueur masqué et horriblement assassinés un par un... mais se réveillent ensuite et se retrouvent au début de la même soirée.</p>
-                            <p class="carousel-item-text">Piégés dans la vallée, ils sont forcés de revivre ce cauchemar encore et encore - mais à chaque fois, la menace du tueur est différente, et chaque version est plus terrifiante que la précédente.</p>
-                            <p class="carousel-item-text">Alors que l'espoir s'amenuise, le groupe comprend qu'ils n'ont qu'un nombre limité de vies, et que leur seule chance de s'en sortir est de survivre jusqu'à l'aube.</p>
+                            <p class="carousel-item-text">Alors que Cécile s’apprête à réaliser son rêve, ouvrir son propre restaurant gastronomique, elle doit rentrer dans le village de son enfance à la suite de l'infarctus de son père.</p>
+                            <p class="carousel-item-text">Loin de l'agitation parisienne, elle recroise son amour de jeunesse.</p>
+                            <p class="carousel-item-text">Ses souvenirs ressurgissent et ses certitudes vacillent…</p>
                         </div>
                         <div class="carousel-item-subcontent hidden">
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="La Venue de l’avenir"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">La Venue de l’avenir</h3>
-                        <img src="./asset/img/until_down.jpg" alt="Image du film : La Venue de l’avenir" class="carousel-item-header-img">
+                        <img loading="lazy" src="./asset/img/lvdla.jpg" alt="Image du film : La Venue de l’avenir" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
                         <div class="carousel-item-description">
                             <h4 class="carousel-item-h4">Description</h4>
-                            <p class="carousel-item-text">Un an après la mystérieuse disparition de sa sœur Mélanie, Clover et ses amis se rendent dans la vallée reculée où elle a disparu pour chercher des réponses.</p>
-                            <p class="carousel-item-text">Alors qu'ils inspectent une auberge de jeunesse abandonnée, ils se retrouvent traqués par un tueur masqué et horriblement assassinés un par un... mais se réveillent ensuite et se retrouvent au début de la même soirée.</p>
-                            <p class="carousel-item-text">Piégés dans la vallée, ils sont forcés de revivre ce cauchemar encore et encore - mais à chaque fois, la menace du tueur est différente, et chaque version est plus terrifiante que la précédente.</p>
-                            <p class="carousel-item-text">Alors que l'espoir s'amenuise, le groupe comprend qu'ils n'ont qu'un nombre limité de vies, et que leur seule chance de s'en sortir est de survivre jusqu'à l'aube.</p>
+                            <p class="carousel-item-text">Aujourd’hui, en 2025, une trentaine de personnes issues d’une même famille apprennent qu’ils vont recevoir en héritage une maison abandonnée depuis des années.</p>
+                            <p class="carousel-item-text">Quatre d'entre eux, Seb, Abdel, Céline et Guy sont chargés d’en faire l'état des lieux. Ces lointains "cousins" vont alors découvrir des trésors cachés dans cette vieille maison.</p>
+                            <p class="carousel-item-text">Ils vont se retrouver sur les traces d'une mystérieuse Adèle qui a quitté sa Normandie natale, à 20 ans. Cette Adèle se retrouve à Paris en 1895, au moment où cette ville est en pleine révolution industrielle et culturelle.</p>
+                            <p class="carousel-item-text">Pour les quatre cousins, ce voyage introspectif dans leur généalogie va leur faire découvrir ce moment si particulier de la fin du XIXe siècle où la photographie s'inventait et l’impressionnisme naissait.</p>
+                            <p class="carousel-item-text">Ce face à face entre les deux époques 2025 et 1895 remettra en question leur présent et leurs idéaux et racontera le sens de : La venue de l’avenir.</p>
                         </div>
                         <div class="carousel-item-subcontent hidden">
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Lilo & Stitch"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">Lilo & Stitch</h3>
                         <img src="./asset/img/lets.jpg" alt="Image du film : Lilo & Stitch" class="carousel-item-header-img">
@@ -231,10 +232,10 @@
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="The Phoenician Scheme"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">The Phoenician Scheme</h3>
-                        <img src="./asset/img/the_phoenicia_scheme.webp" alt="Image du film : The Phoenician Scheme" class="carousel-item-header-img">
+                        <img loading="lazy" src="./asset/img/the_phoenicia_scheme.webp" alt="Image du film : The Phoenician Scheme" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
@@ -250,10 +251,10 @@
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="Diplodocus"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">Diplodocus</h3>
-                        <img src="./asset/img/diplodocus.jpg" alt="Image du film : Diplodocus" class="carousel-item-header-img">
+                        <img loading="lazy" src="./asset/img/diplodocus.jpg" alt="Image du film : Diplodocus" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
@@ -267,10 +268,10 @@
                         </div>
                     </div>
                 </article>
-                <article class="carousel-item"> 
+                <article class="carousel-item" data-name="L'Ultime braquage"> 
                     <div class="carousel-item-header">
                         <h3 class="carousel-item-header-h3">L'Ultime braquage</h3>
-                        <img src="./asset/img/l'ultim_braquage.jpg" alt="Image du film : L'Ultime braquage" class="carousel-item-header-img">
+                        <img loading="lazy" src="./asset/img/l'ultim_braquage.jpg" alt="Image du film : L'Ultime braquage" class="carousel-item-header-img">
                     </div>
                     <div class="carousel-item-content">
                         <h3 class="carousel-item-content-h3">En savoir plus</h3>
@@ -290,25 +291,25 @@
             <div class="film-list">
                 <article class="film-card">
                     <h3 class="film-card-h3">Destination Finale : Bloodlines</h3>
-                    <img src="./asset/img/destination_final_bloodlines.jpg" alt="Image du film : Destination Finale : Bloodlines" class="film-card-img">
+                    <img loading="lazy" src="./asset/img/destination_final_bloodlines.jpg" alt="Image du film : Destination Finale : Bloodlines" class="film-card-img">
                 </article>
                 <article class="film-card">
                     <h3 class="film-card-h3">Mission impossible : The final reckoning</h3>
-                    <img src="./asset/img/mission_impossible.jpg" alt="Image du film : Mission impossible : The final reckoning" class="film-card-img">
+                    <img loading="lazy" src="./asset/img/mission_impossible.jpg" alt="Image du film : Mission impossible : The final reckoning" class="film-card-img">
                 </article>
                 <article class="film-card">
                     <h3 class="film-card-h3">Radio prague : Les ondes de la revolte</h3>
-                    <img src="./asset/img/radio_prague.webp" alt="Image du film : Destination Finale : Bloodlines" class="film-card-img">
+                    <img loading="lazy" src="./asset/img/radio_prague.webp" alt="Image du film : Destination Finale : Bloodlines" class="film-card-img">
                 </article>
                 <article class="film-card">
                     <h3 class="film-card-h3">Destination Finale : Bloodlines</h3>
-                    <img src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="film-card-img">
+                    <img loading="lazy" src="./asset/img/until_down.jpg" alt="Image du film : Until down : La mort sans fin" class="film-card-img">
                 </article>
             </div>
         </section>
     </main>
     <footer>
-        <img src="./asset/img/Gemini_Generated_Image_86khdx86khdx86kh.jpg" alt="Logo du site" class="footer-logo">
+        <img loading="lazy" src="./asset/img/Gemini_Generated_Image_86khdx86khdx86kh.jpg" alt="Logo du site" class="footer-logo">
         <ul class="footer-links">
             <li><a href="./html/legalmentions.html">Mentions légale</a></li>
             <li><a href="./html/CGU.html">CGU</a></li>

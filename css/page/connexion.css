@@ -10,7 +10,6 @@
 .signup, .login {
     background-color: var(--background-color-tertiary);
     width: 40%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,6 +17,7 @@
     justify-content: center;
     margin: 0;
     gap: 1rem;
+    padding: 2rem;
     border-radius: 30px;
 }
 .login h2 {
@@ -31,8 +31,4 @@
     width: 100%;
     padding: 2rem;
     gap: 1rem;
-}
-.login-form label {
-    font-size: large;
-    font-family: var(--text-font);
 }

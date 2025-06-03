@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Redirige après un court délai
             setTimeout(() => {
-                window.location.href = "../html/espace-membre.html";
+                window.location.href = "../html/connexion.html";
             }, 3000);
         });
     });
