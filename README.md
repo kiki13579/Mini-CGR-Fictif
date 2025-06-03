@@ -80,3 +80,4 @@ Visualisation du chiffre d’affaires total
 1 zip avec l’ensemble du projet final
 ✅ Mettre à jour le readme.txt avec l’URL de l’application finale
 
+Application déployée sur : https://

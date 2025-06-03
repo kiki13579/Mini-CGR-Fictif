@@ -4,96 +4,115 @@
     padding: 0.2rem 1rem;
     font-family: var(--text-font);
 }
-
-
-.film {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2rem;
-    background-color: var(--background-color-tertiary);
-    border-radius:30px;
+.carousel-container {
+  width: 100%;
+  max-width: 90%;
+  overflow: hidden;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  position: relative;
 }
-.carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    gap: 2rem;
-    padding: 2rem;
 
-
+.carousel-container-h2 {
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: xx-large;
+  margin-bottom: 1rem;
+  overflow: hidden;
 }
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
 .carousel-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    background-color: var(--background-color-secondary);
-    border-radius: 30px;
-    padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-shrink: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: var(--background-color-tertiary);
+  border-radius: 30px;
 }
-.film-poster h2{
-    padding: 1rem;
-    font-family: var(--title-font);
-    flex-wrap: wrap;
+.carousel-item-header, .carousel-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  background-color: var(--background-color-secondary);
+  border-radius: 30px;
 }
-.carousel-item-image {
-    border-radius: 30px;
-    width: 20rem;
+.carousel-item-header-h3, .carousel-item-content-h3 {
+  font-family: var(--title-font);
+  font-size: x-large;
+  margin-bottom: 0.5rem;
 }
-.carousel-item-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
+.carousel-item-header-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
 }
-.film-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 1rem;
-    gap: 1rem;
+.carousel-item-description, .carousel-item-subcontent {
+  background-color: var(--background-color-tertiary);
+  border-radius: 30px;
+  font-size: medium;
+  padding: 0.75rem;
+  padding: 1rem;
+  color: var(--text-color-secondary);
+  text-align: center;
 }
-.film-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 1rem;
-    gap: 1rem;
-    background-color: var(--background-color-tertiary);
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);    
-}
-.film-reservation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-    padding: 1rem;
-    gap: 1rem;
-    background-color: var(--background-color-tertiary);
-    border-radius: 30px;
+
+.carousel-item-subcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hidden {
-    display: none;
+  display: none;
+}
+.carousel-item-h4 {
+  font-family: var(--text-font);
+  font-size: large;
+  color: var(--text-color-secondary);
+}
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0.5rem 0;
 }
 
-.film-reservation button {
-    padding: 1rem 2rem;
-    background-color: var(--link-color);
-    color: var(--text-color);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-family: var(--text-font);
-    font-size: 1rem;
+.counter button {
+  padding: 0.2rem 0.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+.reserve-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.places-left {
+  margin-top: 0.5rem;
 }

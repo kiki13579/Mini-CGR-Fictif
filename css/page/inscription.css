@@ -4,10 +4,11 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    gap: 2rem;
     background-color: var(--background-color-secondary);
 }
 
-.signup {
+.signup, .login {
     background-color: var(--background-color-tertiary);
     width: 40%;
     height: 100%;
@@ -17,6 +18,7 @@
     text-align: center;
     justify-content: center;
     margin: 0;
+    gap: 1rem;
     border-radius: 30px;
 }
 .signup h2 {
@@ -43,4 +45,41 @@
     border-radius: 10px;
     border: 1px solid var(--text-color-secondary);
     font-family: var(--text-font);
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.signup-form button, .login button {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--title-color);
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.signup-form button:hover, .login button:hover {
+    background-color: var(--link-color);
+}
+.login h2 {
+    padding: 1rem;
+    font-size: xx-large;
+}
+.login p {
+    font-size: large;
+    font-family: var(--text-font);
+}
+.login button {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
 }
