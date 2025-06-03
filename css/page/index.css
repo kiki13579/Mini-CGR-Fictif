@@ -7,13 +7,13 @@
 .carousel-container {
   width: 100%;
   max-width: 90%;
+  margin: 0 auto;
   overflow: hidden;
-  margin: auto;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  border-radius: 30px;
+  border-radius: 50px;
   position: relative;
 }
 
@@ -115,4 +115,66 @@
 
 .places-left {
   margin-top: 0.5rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  width: 100%;
+  background-color: var(--background-color-secondary);
+}
+.film-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+.film-list-container h2 {
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: xx-large;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+.film-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.film-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  background-color: var(--background-color-tertiary);
+  border-radius: 30px;
+  padding: 2rem;
+  gap: 1rem;
+  margin: 0 0 2rem 0;
+}
+
+.film-card img {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.film-card-h3 {
+  font-family: var(--title-font);
+  font-size: large;
+  margin-bottom: 0.5rem;
 }

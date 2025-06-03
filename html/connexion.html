@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/page/connexion.css">
+    <script src="../js/utility/hashing.js" defer></script>
+    <script src="../js/pages/connexion.js" defer></script>
     <title>Mini CGR Fictif - Connexion</title>
 </head>
 <body>
@@ -19,12 +21,13 @@
         <div class="login">
             <h2>Connexion</h2>
             <form id="login-form">
-                <label for="login-username">Nom d’utilisateur :</label>
-                <input type="text" id="login-username" required>
-                <label for="login-password">Mot de passe :</label>
-                <input type="password" id="login-password" required>
+                <label for="username">Nom d’utilisateur :</label>
+                <input type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
                 <button type="submit">Connexion</button>
             </form>
+            
         </div>
         <div class="signup">
             <h2>Pas encore inscrit ?</h2>
@@ -33,9 +36,15 @@
         </div>
     </main>
     <footer>
-        <p>Mini CGR Fictif est un site fictif créé dans le cadre d'un projet de formation.</p>
-        <p>Designed by Kellyan Bernard</p>
-        <p>&copy; 2025 Mini CGR Fictif - Tous droits réservés</p>
+        <img src="../asset/img/Gemini_Generated_Image_86khdx86khdx86kh.jpg" alt="Logo du site" class="footer-logo">
+        <ul class="footer-links">
+            <li><a href="./legalmentions.html">Mentions légale</a></li>
+            <li><a href="./CGU.html">CGU</a></li>
+            <li><a href="./apropos.html">A propos</a></li>
+            <li><a href="./copyright.html">Copyright</a></li>
+            <li><a href="./RGPD.html"> RGPD</a></li>
+        </ul>
+        <p>&copy; 2025 Mini CGR Fictif - Designed by Kellyan Bernard - Tous droits réservés</p>
     </footer>
 </body>
 </html>

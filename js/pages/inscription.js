@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!username || !password) return;
 
-        // Génère un ID simple pour le compte
         const userId = "user_" + Date.now();
 
         hashPassword(password).then(hashedPassword => {
@@ -19,26 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 username,
                 password: hashedPassword
             };
+
             localStorage.setItem("user_" + username, JSON.stringify(userData));
             localStorage.setItem("loggedInUser", username);
 
+            // Affiche la modale
             modal.classList.remove("hidden");
 
+            // Redirige après un court délai
             setTimeout(() => {
                 window.location.href = "../html/espace-membre.html";
-            }, 1500);
+            }, 3000);
         });
-
-        // Stocke dans localStorage
-        localStorage.setItem("user_" + username, JSON.stringify(userData));
-        localStorage.setItem("loggedInUser", username); // Pour suivre qui est connecté
-
-        // Affiche modale
-        modal.classList.remove("hidden");
-
-        // Simule chargement puis redirection
-        setTimeout(() => {
-            window.location.href = "../html/espace-membre.html";
-        }, 3000);
     });
 });

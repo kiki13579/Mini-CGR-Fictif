@@ -36,12 +36,3 @@
     font-size: large;
     font-family: var(--text-font);
 }
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-    width: 80%;
-    padding: 0.5rem;
-    border-radius: 10px;
-    border: 1px solid var(--text-color-secondary);
-    font-family: var(--text-font);
-}
