@@ -2,7 +2,9 @@ const track = document.querySelector('.carousel-track');
 const slides = document.querySelectorAll('.carousel-item');
 const totalSlides = slides.length;
 let currentIndex = 0;
-const intervalTime = 3000;
+
+const isMobileOrTablet = window.innerWidth <= 1024;
+const intervalTime = isMobileOrTablet ? 10000 : 3000;
 
 let intervalId; // pour pouvoir l’arrêter / redémarrer
 
