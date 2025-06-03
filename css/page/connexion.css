@@ -1,0 +1,47 @@
+.connexion-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+    background-color: var(--background-color-secondary);
+}
+.signup, .login {
+    background-color: var(--background-color-tertiary);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    gap: 1rem;
+    border-radius: 30px;
+}
+.login h2 {
+    padding: 1rem;
+    font-size: xx-large;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+}
+.login-form label {
+    font-size: large;
+    font-family: var(--text-font);
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--text-color-secondary);
+    font-family: var(--text-font);
+}

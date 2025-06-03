@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/page/inscription.css">
+    <script src="../js/utility/hashing.js" defer></script>
+    <script src="../js/pages/inscription.js" defer></script>
     <title>Mini CGR Fictif - Inscription</title>
 </head>
 <body>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Inscription réussie !</h2>
+            <p>Redirection vers votre espace membre en cours...</p>
+            <div class="loader"></div>
+        </div>
+    </div>
     <header>
         <h1>Mini CGR Fictif</h1>
         <nav>
@@ -33,7 +42,8 @@
         <div class="login">
             <h2>Déjà inscrit ?</h2>
             <p>Connectez-vous pour accéder à votre compte.</p>
-            <button type="submit">Connectez-vous</button>
+            <button type="submit" onclick="window.location.href = './connexion.html'">Connectez-vous</button>
+        </div>
     </main>
     <footer>
         <p>Mini CGR Fictif est un site fictif créé dans le cadre d'un projet de formation.</p>

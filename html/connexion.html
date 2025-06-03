@@ -15,15 +15,22 @@
             <a href="./inscription.html">Inscription</a>
         </nav>
     </header>
-    <main>
-        <h2>Connexion</h2>
-        <form>
-            <label for="username">Nom d’utilisateur :</label>
-            <input type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur">
-            <label for="password">Mot de passe :</label>
-            <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
-            <button type="submit">Connexion</button>
-        </form>
+    <main class="connexion-main">
+        <div class="login">
+            <h2>Connexion</h2>
+            <form id="login-form">
+                <label for="login-username">Nom d’utilisateur :</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Mot de passe :</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Connexion</button>
+            </form>
+        </div>
+        <div class="signup">
+            <h2>Pas encore inscrit ?</h2>
+            <p>Inscrivez vous maintenant</p>
+            <button type="submit" onclick="window.location.href = './inscription.html'">S'inscrire</button>
+        </div>
     </main>
     <footer>
         <p>Mini CGR Fictif est un site fictif créé dans le cadre d'un projet de formation.</p>
