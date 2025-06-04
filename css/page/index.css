@@ -280,6 +280,17 @@ main {
 
 /* SMARTPHONES - Moins de 768px */
 @media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
   .desktop-menu {
     display: flex;
     flex-direction: column;
@@ -298,8 +309,8 @@ main {
   }
 
   .carousel-item-header-img {
-    width: 90%;
-    max-width: 300px;
+    width: var(280px*90%);
+    height: var(380px*90%);
   }
 
   .carousel-item-header,
@@ -321,6 +332,12 @@ main {
   .carousel-item-header-h3,
   .carousel-item-content-h3 {
     font-size: 1.2rem;
+  }
+  .carousel-track {
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    overflow-y: hidden;
   }
 }
 
