@@ -33,26 +33,28 @@
         </nav>
     </header>
     <main>
-        <h2>Admin panel</h2>
-        <section>
-            <h3>Modifier le prix de la place</h3>
-            <p>Prix actuel : 12 €</p>
-            <input type="number" placeholder="Nouveau prix">
-            <button>Valider</button>
-            <h4>Historique des changements</h4>
-            <ul>
-            </ul>
+        <section class="admin-header admin-bg">
+            <h1>Admin panel</h1>
         </section>
-        <section>
-            <h3>Chiffre d’affaires</h3>
-            <p>Chiffre actuel : 2566 €</p>
-            <h4>6 derniers mois :</h4>
-            <ul>
-            </ul>
+        <section class="admin-container">
+            <section class="admin-actions admin-bg">
+                <button id="manage-users">Gérer les utilisateurs</button>
+                <button id="manage-films">Gérer les films</button>
+                <button id="manage-sessions">Gérer les séances</button>
+                <button id="view-reports">Voir les rapports</button>
+            </section>
+            <section class="admin-info admin-bg">
+                <!-- Contenu dynamique pour afficher les informations de gestion -->
+            </section>
         </section>
+        <section class="admin-logs admin-bg">
+            <h3>Logs</h3>
+            <ul id="log-list">
+                <!-- Liste des logs d'administration -->
+            </ul>
     </main>
     <footer>
-        <img src="../asset/img/Gemini_Generated_Image_86khdx86khdx86kh.jpg" alt="Logo du site" class="footer-logo">
+        <img src="../asset/img/Gemini_Generated_Image_86khdx86khdx86kh.webp" alt="Logo du site" class="footer-logo">
         <ul class="footer-links">
             <li><a href="./legalmentions.html">Mentions légale</a></li>
             <li><a href="./CGU.html">CGU</a></li>

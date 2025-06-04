@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector(".signup-form");
     const modal = document.getElementById("modal");
 
+
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 

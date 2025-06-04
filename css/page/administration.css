@@ -1,0 +1,58 @@
+main {
+    background-color: var(--background-color-tertiary);
+    border-radius: 50px;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.admin-bg {
+    background-color: var(--background-color-secondary);
+    border-radius: 50px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.admin-header {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 1rem 0;
+    justify-items: center;    
+}
+.admin-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+}
+.admin-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 1rem;
+    background-color: var(--background-color-secondary);
+    padding: 2rem 1rem;
+    border-radius: 50px;
+}
+ .admin-actions button {
+    width: 100%;
+    padding: 1rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: var(--background-color-tertiary);
+    color: var(--text-color-secondary);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}

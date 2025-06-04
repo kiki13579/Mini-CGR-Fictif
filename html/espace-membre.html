@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/page/espace-membre.css">
     <link rel="stylesheet" href="./css/utility/burgermenu.css">
     <script src="./js/utility/burgermenu1.js" defer></script>
+    <script src="../js/utility/redirectIfNotLoggedIn.js" defer></script>
+    <script src="../js/pages/espacemembre.js" defer></script>
     <title>Mini CGR Fictif - Membre</title>
 </head>
 <body>
@@ -23,22 +25,24 @@
         <!-- Mobile menu -->
         <div class="mobile-nav hidden">
             <a href="../index.html">Accueil</a>
-            <a href="../index.html">Deconnexion</a>
         </div>
         <nav>
             <a href="../index.html">Accueil</a>
-            <a href="../index.html">Deconnexion</a>
         </nav>
     </header>
-    <main>
-        <h2>Espace membre</h2>
-        <section>
-            <button>Informations personnelles</button>
-            <button>Historique</button>
-            <button>Compte</button>
+    <main class="member-space">
+        <h1>Espace membre</h2>
+        <section class="member-container">
+            <section class="member-actions">
+                <button>Panier</button>
+                <button>Informations personnelles</button>
+                <button>Historique</button>
+                <button>Compte</button>
+            </section>
+            <section class="member-info">
+            </section>
         </section>
-        <section>
-        </section>
+        
     </main>
     <footer>
         <img src="../asset/img/Gemini_Generated_Image_86khdx86khdx86kh.jpg" alt="Logo du site" class="footer-logo">
