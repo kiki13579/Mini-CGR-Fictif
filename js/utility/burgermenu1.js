@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Lien Accueil
         const accueil = document.createElement("a");
-        accueil.href = "./index.html";
+        accueil.href = "../index.html";
         accueil.textContent = "Accueil";
         menuContainer.appendChild(accueil);
 
         if (isConnected) {
             const membre = document.createElement("a");
-            membre.href = "./html/espace-membre.html";
+            membre.href = "./espace-membre.html";
             membre.textContent = "Espace Membre";
 
             const logout = document.createElement("a");
@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
             menuContainer.appendChild(logout);
         } else {
             const login = document.createElement("a");
-            login.href = "./html/connexion.html";
+            login.href = "./connexion.html";
             login.textContent = "Connexion";
 
             const register = document.createElement("a");
-            register.href = "./html/inscription.html";
+            register.href = "./inscription.html";
             register.textContent = "Inscription";
 
             menuContainer.appendChild(login);

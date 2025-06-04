@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
             };
 
             localStorage.setItem("user_" + username, JSON.stringify(userData));
-            localStorage.setItem("loggedInUser", username);
 
             // Affiche la modale
             modal.classList.remove("hidden");
