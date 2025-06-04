@@ -1,0 +1,42 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 50px;
+  gap: 3rem;
+  width: 70%;
+  background-color: var(--background-color-tertiary);
+}
+.rgpd-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 50px;
+  background-color: var(--background-color-secondary);
+}
+@media screen and (max-width: 768px) {
+    main {
+      width: 90%;
+      padding: 1rem;
+    }
+  .rgpd-container {
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  .rgpd-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .rgpd-section h2 {
+    font-size: 1.2rem;
+  }
+}
