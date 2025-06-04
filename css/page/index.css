@@ -264,6 +264,9 @@ main {
   .carousel-item-content {
     display: none !important;
   }
+  .carousel-item-description {
+    display: block !important;
+  }
 
   .carousel-item-header-img {
     width: 100%;

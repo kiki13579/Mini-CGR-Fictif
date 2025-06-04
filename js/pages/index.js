@@ -84,3 +84,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  document.addEventListener("DOMContentLoaded", () => {
+  const isLoggedIn = localStorage.getItem("connected") === "true";
+
+  // Si c’est une tablette ou mobile
+  if (window.innerWidth <= 1024 && isLoggedIn) {
+    const allContent = document.querySelectorAll('.carousel-item');
+
+    allContent.forEach(item => {
+      const content = item.querySelector('.carousel-item-content');
+      const description = item.querySelector('.carousel-item-description');
+
+      if (content) content.style.display = 'flex';
+      if (description) description.style.display = 'none';
+    });
+  }
+});
