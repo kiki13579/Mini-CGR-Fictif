@@ -8,8 +8,10 @@
     <meta name="author" content="Kamihate">
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/page/index.css">
+    <link rel="stylesheet" href="./css/utility/burgermenu.css">
     <script src="./js/utility/carousel.js" defer></script>
     <script src="./js/pages/index.js" defer></script>
+    <script src="./js/utility/burgermenu.js" defer></script>
     <title>Mini CGR Fictif - Acceuil</title>
 </head>
 <body class="body">
@@ -21,10 +23,23 @@
     </div>
     <header>
         <h1 class="logo">Mini CGR Fictif</h1>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-nav hidden">
+            <a href="./index.html">Accueil</a>
+            <a href="./connexion.html">Connexion</a>
+            <a href="./inscription.html">Inscription</a>
+        </div>
         <nav class="desktop-menu">
+            <a href="./index.html">Accueil</a>
             <a href="./html/connexion.html">Connexion</a>
             <a href="./html/inscription.html">Inscription</a>
         </nav>
+        
     </header>
     <main>
         <section class="carousel-container">

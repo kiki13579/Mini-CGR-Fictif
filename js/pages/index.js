@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const maxPlaces = 50;
   const carouselItems = document.querySelectorAll(".carousel-item");
